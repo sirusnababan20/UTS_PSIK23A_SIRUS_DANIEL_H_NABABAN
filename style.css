@@ -1,0 +1,221 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-header {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.logo i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li {
+    margin: 0 15px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navlinks li a:hover {
+    color: #f4f4f4;
+}
+
+.togglebtn {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero-pic img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn-group a {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-group a:hover {
+    background-color: #0056b3;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #f4f4f4;
+}
+
+/* Sections Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    color: white; /* Ensure text is visible against the background */
+}
+
+/* Ensure good contrast with text */
+section h2, section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Background styles for sections */
+#home {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#skills {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#education {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#experience {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#work {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#blog {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    background-image: url('download.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(51, 51, 51, 0.8); /* Dark background for menu */
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    nav ul.open {
+        display: block;
+    }
+
+    .togglebtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .togglebtn span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 6px 0;
+        background-color: white;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+}
